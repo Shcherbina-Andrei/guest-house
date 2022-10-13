@@ -1,0 +1,60 @@
+@import "../base/variables.scss";
+
+.description {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.description__wrapper {
+  display: grid;
+  grid-template-areas: "column1 column2" "column1 button";
+  gap: 40px;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  padding: 40px 16px 0 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 42px;
+    height: 8px;
+    background-color: #e08631;
+  }
+}
+
+.description__text {
+  margin: 0;
+
+  &--column-1 {
+    grid-area: column1;
+  }
+
+  &--column-2 {
+    grid-area: column2;
+  }
+}
+
+.description__button {
+  grid-area: button;
+  width: 106px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: #52503b;
+  color: #ffffff;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

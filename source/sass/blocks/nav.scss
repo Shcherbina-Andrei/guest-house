@@ -1,0 +1,37 @@
+@import "../base/variables.scss";
+
+.nav {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.nav__book-button {
+  padding: 11px 18px;
+  background-color: #ffffff;
+  color: $font-primary-color;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+

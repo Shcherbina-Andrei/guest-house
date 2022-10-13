@@ -1,0 +1,40 @@
+.services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #ffffff;
+}
+
+.services__wrapper {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-right: 16px;
+  padding-left: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 16px;
+    display: block;
+    width: 42px;
+    height: 8px;
+    background-color: #e08631;
+  }
+}
+
+.services__title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.services__description {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 24px;
+}

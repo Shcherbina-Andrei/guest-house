@@ -1,0 +1,36 @@
+.slogan {
+  padding-top: 140px;
+  background-color: #ffffff;
+}
+
+.slogan__wrapper {
+  position: relative;
+  width: 1286px;
+  padding-top: 32px;
+  margin: 0 auto;
+  margin-bottom: 140px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 42px;
+    height: 8px;
+    background-color: #e08631;
+  }
+}
+
+.slogan__text {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 96px;
+  text-align: center;
+}
+
+.slogan__picture {
+  display: block;
+  margin: 0 auto;
+}

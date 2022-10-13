@@ -1,0 +1,38 @@
+.sleeping-arrangements {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.sleeping-arrangements__wrapper {
+  position: relative;
+  width: 1168px;
+  margin: 0 auto;
+  padding-top: 38px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 42px;
+    height: 8px;
+    background-color: #e08631;
+  }
+}
+
+.sleeping-arrangements__title {
+  font-size: 32px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.sleeping-arrangements__description {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 32px;
+}

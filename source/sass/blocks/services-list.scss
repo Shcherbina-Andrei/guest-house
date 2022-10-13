@@ -1,0 +1,85 @@
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-auto-flow: column;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services-list__item {
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 52px;
+
+  ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+  }
+
+  &--outdoor {
+    ::before {
+      background-image: url("../../img/services/pine.svg");
+    }
+  }
+
+  &--coffee {
+    ::before {
+      background-image: url("../../img/services/coffee-maker.svg");
+    }
+  }
+
+  &--nature {
+    ::before {
+      background-image: url("../../img/services/nature.svg");
+    }
+  }
+
+  &--conditioner {
+    ::before {
+      background-image: url("../../img/services/conditioner.svg");
+    }
+  }
+
+  &--storage {
+    ::before {
+      background-image: url("../../img/services/storage.svg");
+    }
+  }
+
+  &--cutlery {
+    ::before {
+      background-image: url("../../img/services/glass.svg");
+    }
+  }
+
+  &--options {
+    ::before {
+      background-image: url("../../img/services/pizza.svg");
+    }
+  }
+
+  &--kitchen {
+    ::before {
+      background-image: url("../../img/services/stove.svg");
+    }
+  }
+}
+
+.services-list__subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.services-list__text {
+  margin: 0;
+}

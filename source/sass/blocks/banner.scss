@@ -1,0 +1,40 @@
+@import "../base/variables.scss";
+
+.banner {
+  background-image: url("../../img/banner-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 178px;
+  padding-bottom: 248px;
+}
+
+.banner__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.banner__logo {
+  margin-bottom: 38px;
+}
+
+.banner__description {
+  font-size: 48px;
+  line-height: 53px;
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.banner__location {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

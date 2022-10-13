@@ -1,4 +1,23 @@
-p {
-  background-color: red;
-  color: yellow;
-}
+@use "base/global.scss";
+@use "base/fonts.scss";
+@use "base/variables.scss";
+@use "blocks/page.scss";
+@use "blocks/header.scss";
+@use "blocks/nav.scss";
+@use "blocks/menu.scss";
+@use "blocks/button.scss";
+@use "blocks/main-container.scss";
+@use "blocks/banner.scss";
+@use "blocks/description.scss";
+@use "blocks/slogan.scss";
+@use "blocks/sleeping-arrangements.scss";
+@use "blocks/arrangements.scss";
+@use "blocks/services.scss";
+@use "blocks/services-list.scss";
+@use "blocks/reviews.scss";
+@use "blocks/reviews-container.scss";
+@use "blocks/options.scss";
+@use "blocks/options-list.scss";
+@use "blocks/connection.scss";
+@use "blocks/footer.scss";
+@use "blocks/copyright.scss"

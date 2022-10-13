@@ -1,0 +1,78 @@
+@import "../base/variables.scss";
+
+.connection {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.connection__wrapper {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 38px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    width: 42px;
+    height: 8px;
+    background-color: #e08631;
+  }
+}
+
+.connection__slogan {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.connection__text {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.connection__buttons-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.connection__button {
+  box-sizing: border-box;
+  padding: 16px 26px;
+
+  &--contact {
+    color: $font-primary-color;
+    border: 4px solid #52503b;
+    margin-right: 20px;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #52503b;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &--book {
+    color: #ffffff;
+    background-color: #52503b;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
