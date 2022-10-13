@@ -1,0 +1,136 @@
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #52503b;
+  color: #ffffff;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 280px 280px 576px;
+  grid-template-areas: "nav social newsletter" "copyright copyright copyright";
+  column-gap: 16px;
+  row-gap: 48px;
+  width: 1168px;
+  margin: 0 auto;
+}
+
+.footer__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.footer__nav {
+  grid-area: nav;
+}
+
+.footer__menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 11px;
+}
+
+.footer__menu-item {
+  margin-bottom: 12px;
+}
+
+.footer__menu-link {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.footer__social {
+  grid-area: social;
+}
+
+.footer__social-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer__social-link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__newsletter {
+  grid-area: newsletter;
+}
+
+.footer__newsletter-description {
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.footer__field-wrapper {
+  position: relative;
+}
+
+.footer__field {
+  box-sizing: border-box;
+  width: 576px;
+  padding: 16px 30px;
+  border-radius: 8px;
+  border: none;
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #52503b;
+  }
+}
+
+.footer__submit-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+  right: 7px;
+  border-radius: 10px;
+  background-color: #52503b;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.footer__copyright {
+  grid-area: copyright;
+}

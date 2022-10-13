@@ -1,0 +1,50 @@
+.options-list {
+  display: grid;
+  grid-template-rows: 67px 67px;
+  grid-template-columns: 260px 260px;
+  grid-auto-flow: column;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.options-list__item {
+  position: relative;
+  padding-left: 52px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--wifi {
+    &::before {
+      background-image: url("../../img/options/wi-fi.svg");
+    }
+  }
+
+  &--rack {
+    &::before {
+      background-image: url("../../img/options/rack.svg");
+    }
+  }
+
+  &--bread {
+    &::before {
+      background-image: url("../../img/options/bread.svg");
+    }
+  }
+
+  &--tableware {
+    &::before {
+      background-image: url("../../img/options/tableware.svg");
+    }
+  }
+}
